@@ -1,0 +1,21 @@
+<!ELEMENT library (book,journal,misc)>
+<!ELEMENT book (title,editor,publisher)>
+<!ATTLIST book id NMTOKEN #REQUIRED>
+<!ELEMENT title (#PCDATA) >
+<!ELEMENT editor (#PCDATA)>
+<!ELEMENT publisher (#PCDATA)>
+<!ELEMENT journal (title,volume)>
+<!ATTLIST journal id CDATA #REQUIRED>
+<!ELEMENT volume (#PCDATA|number)*>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT misc (author+,title,year,pages)>
+<!ATTLIST misc id1 NMTOKEN #REQUIRED>
+<!ATTLIST misc id2 NMTOKEN #REQUIRED>
+<!ELEMENT author (#PCDATA)>
+<!ELEMENT year (#PCDATA)>
+<!ELEMENT pages (#PCDATA)>
+
+
+<!--Title is mandatory
+There can be only one title, editor, publisher, volume, and year for a library entry
+There may be more than one author for an entry-->

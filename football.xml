@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE game [
+<!ELEMENT game (team+)>
+<!ELEMENT team (player+)>
+<!ATTLIST team xoga_como NMTOKEN #REQUIRED>
+<!ELEMENT player (tarxeta*,gol*)>
+<!ATTLIST player numero ID NMTOKEN #REQUIRED>
+<!ELEMENT tarxeta EMPTY>
+<!ATTLIST tarxeta tipo NMTOKEN #REQUIRED>
+<!ELEMENT gol (hora)>
+<!ATTLIST gol tipo_gol NMTOKEN #REQUIRED>
+<!ELEMENT hora (#PCDATA)>
+]> 
+
+<game>
+    <team xoga_como="local">
+        <player numero="2">
+            <tarxeta tipo="roja"></tarxeta>
+            <tarxeta tipo="amarela"></tarxeta>
+        </player>
+        <player numero="5">
+            <gol tipo_gol="ordinario">
+                <hora>15:00</hora>
+            </gol>
+        </player>
+        <player numero="8">
+            <gol tipo_gol="penalti">
+                <hora>16:30</hora>
+            </gol>
+            <gol tipo_gol="ordinario">
+                <hora>15:30</hora>
+            </gol>
+        </player>
+    </team>
+    <team xoga_como="visitante">
+        <player numero="10">
+            <tarxeta tipo="roja"></tarxeta>
+        </player>
+    </team>
+
+
+
+</game>

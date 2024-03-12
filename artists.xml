@@ -1,0 +1,8 @@
+
+<!DOCTYPE artists SYSTEM "artists.dtd">
+<artists>
+    <artist name="artista1" artistID="a1"/>
+    <artist name="artista2" artistID="a2"/>
+    <artist name="artista3" artistID="a3"/>
+    <album name="album" albumArtistID="a1" contributingArtistIDs="a1 a3"/>
+</artists>

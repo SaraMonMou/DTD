@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE booklist [
+    <!ELEMENT booklist (book)+>
+    <!ELEMENT book (bookname*,author+,price?,homepage)>
+    <!ELEMENT bookname (#PCDATA)>
+    <!ELEMENT author (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+    <!ELEMENT homepage (#PCDATA)>
+]>
+
+<booklist>
+    <book>
+        <bookname>La ola que viene</bookname>
+        <author>Suleyman, Mustafa</author>
+        <author>Bhaskar, Michael</author>
+        <price>23.50</price>
+        <homepage>Follas Novas</homepage>
+    </book>
+    <book>
+        <bookname>Una Edad Media en imagenes</bookname>
+        <author>Le Goff, Jacques</author>
+        <homepage>Follas Novas</homepage>
+    </book>
+
+</booklist>

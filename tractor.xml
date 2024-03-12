@@ -1,0 +1,47 @@
+
+<!DOCTYPE tractors SYSTEM "tractor.dtd">
+<tractors>
+    <order>
+        <tractor>
+            <components manufacturer="vendedor">
+                <delivery_date month="April" year="2020"/>
+                <fragile>Yes</fragile>
+                <weight unit="Kg">
+                    100
+                </weight>
+                <serial_number>1234</serial_number>
+                <max_km></max_km>
+            </components>
+        </tractor>
+        <tractor>
+            <components manufacturer="vendedor">
+                <delivery_date day="20" month="June" year="2030"/>
+                <fragile>No</fragile>
+                <weight unit="g">
+                    200
+                </weight>
+                <serial_number>2345</serial_number>
+                <max_km>100000</max_km>
+            </components>
+        </tractor>
+
+    </order>
+
+
+
+</tractors>
+
+<!--A tractor manufacturer wants to unify the XML format of his suppliers information.
+    He has indicated that he needs the XML files to meet the following restrictions:
+An order consists of one or more tractors.
+
+A tractor consists of one or more components.
+A component has the following elements:
+
+manufacturer's name (mandatory attribute), delivery date (it may not appear, if it appears the day is optional,
+but the month and year are mandatory).
+
+You also need to know if the component is fragile or not.
+A weight element of the component must also appear and that weight element has a weight unit attribute (kilos or grams),
+a serial number element and a maximum km element may or may not appear indicating that the component must be replaced after a
+certain number of kilometres.-->
